@@ -1,32 +1,24 @@
 # Python + OpenCV Course Demos
 
-This repo contains 5 standalone demo scripts for a 3‑day Python & OpenCV course.
+This repo contains 6 standalone demo scripts for a 3‑day Python & OpenCV course.
 Each script is **heavily commented** so you can teach from the code directly.
 
 ## Quickstart
 
-1) Create & activate a virtualenv (recommended):
-```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS / Linux
-source .venv/bin/activate
-```
-
-2) Install dependencies:
+1) Install dependencies:
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-3) Run any demo:
+2) Run any demo:
 ```bash
 python scripts/1_live_camera.py
 python scripts/2_background_blur.py
 python scripts/3_edge_detection.py
 python scripts/4_color_detection.py
 python scripts/5_face_detection.py
+python scripts/6_while_for.py
 ```
 
 > **Tip (Windows webcams):** if the camera fails to open, try changing `cv2.VideoCapture(0)` to `cv2.VideoCapture(0, cv2.CAP_DSHOW)` or try index `1`.
@@ -40,6 +32,7 @@ python scripts/5_face_detection.py
 - `scripts/3_edge_detection.py` — Live Canny edge detection with interactive thresholds.
 - `scripts/4_color_detection.py` — HSV color detection with interactive sliders.
 - `scripts/5_face_detection.py` — Face detection using OpenCV’s Haar cascade.
+- `scripts/6_while_for.py` — While for loops iterating over numbers.
 
 ## Troubleshooting
 
